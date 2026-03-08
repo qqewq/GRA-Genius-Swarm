@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\title{Математическое обоснование GRA-Genius-Swarm}
+\author{GRA Research Group}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Формализация Интеллекта Роя}
+Интеллект роя определяется как:
+\begin{equation}
+I_{swarm} = N \cdot \alpha \cdot C(\phi)
+\end{equation}
+где $C(\phi)$ — проектор согласованности, стремящийся к 1 при полном обнулении пены.
+
+\section{Функционал Пены Мультиверса}
+Для уровня $l$ пена определяется как:
+\begin{equation}
+\Phi^{(l)}(\Psi^{(l)}, G_l) = \sum_{\mathbf{a} \neq \mathbf{b}} \big| \langle \Psi^{(\mathbf{a})} | \mathcal{P}_{G_l} | \Psi^{(\mathbf{b})} \rangle \big|^2
+\end{equation}
+Цель алгоритма: найти состояние $\Psi^*$, такое что $\Phi^{(l)} = 0$ для всех $l$.
+
+\section{Оценка Красоты (Интуиция)}
+\begin{equation}
+B(s) = \sigma\left( \sum w_i \cdot \text{sim}(h_i, \text{ideal}) \right)
+\end{equation}
+Решение считается гениальным, если $B(s) > 0.95$.
+
+\section{Теорема о Полном Обнулении}
+При выполнении условий коммутативности проекторов и полноты пространства, существует единственное состояние абсолютного когнитивного вакуума $\Psi_{\infty}^*$.
+
+\end{document}

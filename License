@@ -1,0 +1,17 @@
+
+---
+
+### 2. 📄 `requirements.txt`
+
+```text
+langgraph>=0.0.1
+langchain>=0.1.0
+jax>=0.4.25
+jaxlib>=0.4.25
+numpy>=1.26.0
+torch>=2.1.0
+streamlit>=1.30.0
+aiohttp>=3.9.0
+python-telegram-bot>=20.0
+scipy>=1.12.0
+sympy>=1.12

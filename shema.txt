@@ -1,0 +1,29 @@
+GRA-Genius-Swarm/
+├── README.md                 # Документация (RU/EN) с философией и инструкциями
+├── requirements.txt          # Зависимости Python
+├── config.py                 # Гиперпараметры мультиверса и агентов
+├── math_core/
+│   ├── __init__.py
+│   ├── foam_functional.py    # Реализация функционала пены Φ и градиентов
+│   ├── multiverse_state.py   # Классы состояний H и проекторов P
+│   └── beauty_score.py       # Формула интуиции B(s) через JAX
+├── agents/
+│   ├── __init__.py
+│   ├── base_agent.py         # Базовый класс GRA-агента
+│   ├── obnul_agent.py        # GRA-Obnul: локальное обнуление
+│   ├── heisenberg_agent.py   # GRA-Heisenberg: логика и доказательства
+│   ├── llm_genius.py         # LLM-агент (DeepSeek wrapper)
+│   └── meta_controller.py    # Мета-агент: оценка coherence и reset
+├── swarm_engine/
+│   ├── __init__.py
+│   ├── genius_cycle.py       # Основной цикл "Гения" (LangGraph)
+│   ├── parallel_runner.py    # Масштабирование (Multiprocessing/K8s ready)
+│   └── p2p_connector.py      # Заготовка для Telegram/P2P связи
+├── benchmarks/
+│   ├── run_imo.py            # Тесты на задачи IMO
+│   ├── physics_sim.py        # Симуляция сверхпроводимости (Tc)
+│   └── geopolitics_ossetia.py# Сценарии для Осетии
+├── docs/
+│   └── formulas.tex          # LaTeX документация с выводами из вашего файла
+└── deploy/
+    └── streamlit_app.py      # Интерфейс "Рой vs Эйнштейн"
